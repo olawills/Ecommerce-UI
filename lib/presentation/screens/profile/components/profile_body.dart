@@ -15,13 +15,21 @@ class ProfileBody extends StatelessWidget {
           child: SizedBox(height: getProportionateScreenHeight(50)),
         ),
         SizedBox(height: getProportionateScreenHeight(30)),
-        CircleAvatar(
-          radius: 80,
-          child: SvgPicture.asset(
-            "assets/icons/User.svg",
-          ),
-        ),
       ],
+    );
+  }
+}
+
+class ProfileAvatar extends StatelessWidget {
+  const ProfileAvatar({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return CircleAvatar(
+      radius: 80,
+      child: SvgPicture.asset(
+        "assets/icons/User.svg",
+      ),
     );
   }
 }
