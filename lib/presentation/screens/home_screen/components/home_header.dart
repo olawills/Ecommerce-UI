@@ -24,7 +24,7 @@ class HomeHeader extends StatefulWidget {
 }
 
 class _HomeHeaderState extends State<HomeHeader> {
-  final ZoomDrawerController _zoomDrawerController = ZoomDrawerController();
+  final _drawerController = ZoomDrawerController();
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -34,7 +34,7 @@ class _HomeHeaderState extends State<HomeHeader> {
         children: [
           widget.child1 ??
               buildSideMenu(
-                onPressed: () => _zoomDrawerController.toggle?.call(),
+                onPressed: () => _drawerController.toggle?.call(),
               ),
           widget.child2 ??
               Text(

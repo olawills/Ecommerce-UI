@@ -11,7 +11,7 @@ class Header extends StatelessWidget {
   const Header({
     Key? key,
     required this.text,
-     this.image,
+    this.image,
     this.child,
   }) : super(key: key);
 
@@ -26,10 +26,11 @@ class Header extends StatelessWidget {
           ReusableButton(onPressed: () => Navigator.pop(context)),
           Text(
             text,
-            style: TextStyle(
-              fontSize: getProportionateScreenWidth(24),
-              fontWeight: FontWeight.w400,
-            ),
+            style: Theme.of(context).textTheme.headline2?.copyWith(
+                  fontFamily: 'Raleway',
+                  fontSize: getProportionateScreenWidth(24),
+                  fontWeight: FontWeight.bold,
+                ),
           ),
           child ??
               CircleAvatar(

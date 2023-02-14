@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:nike_store/presentation/screens/notification/notification_screen.dart';
+import 'package:nike_store/presentation/screens/profile/profile_screen.dart';
 import 'package:nike_store/presentation/screens/shop/shop_screen.dart';
 import 'package:nike_store/presentation/screens/favorites/favorite_screen.dart';
 import 'package:nike_store/presentation/screens/home_screen/home_screen.dart';
@@ -87,7 +88,8 @@ class CustomNavigationBar extends StatelessWidget {
                       ? appColors.backgroundColor
                       : appColors.inActiveIconColor,
                 ),
-                onPressed: () {},
+                onPressed: () =>
+                    Navigator.pushNamed(context, ProfileScreen.routeName),
               ),
             ],
           )),

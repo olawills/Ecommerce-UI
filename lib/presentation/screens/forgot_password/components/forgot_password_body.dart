@@ -84,11 +84,6 @@ class _ForgotPasswordBodyState extends State<ForgotPasswordBody> {
                   child: SvgPicture.asset(
                     'assets/icons/frame.svg',
                   ),
-                  // Icon(
-                  //   Icons.mail_rounded,
-                  //   color: appColors.textColor,
-                  //   size: 20,
-                  // ),
                 ),
                 SizedBox(height: getProportionateScreenHeight(10)),
                 Text(
@@ -112,6 +107,5 @@ class _ForgotPasswordBodyState extends State<ForgotPasswordBody> {
             );
           }),
     );
-  
   }
 }

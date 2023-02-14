@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nike_store/presentation/screens/cart/cart_screen.dart';
 import 'package:nike_store/presentation/screens/checkout/checkout_screen.dart';
+import 'package:nike_store/presentation/screens/edit_profile/edit_profile_screen.dart';
 import 'package:nike_store/presentation/screens/notification/notification_screen.dart';
 import 'package:nike_store/presentation/screens/profile/profile_screen.dart';
 import 'package:nike_store/presentation/screens/shop/shop_screen.dart';
@@ -25,4 +26,5 @@ final Map<String, WidgetBuilder> routes = {
   CheckoutScreen.routeName: (context) => const CheckoutScreen(),
   NotificationScreen.routeName: (context) => const NotificationScreen(),
   ProfileScreen.routeName: (context) => const ProfileScreen(),
+  EditProfileScreen.routeName: (context)=> const EditProfileScreen(),
 };

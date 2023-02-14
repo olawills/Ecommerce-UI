@@ -13,4 +13,5 @@ class AppColors {
   final Color shopCounterColor = const Color(0xffff4c24);
   final Color bannerColor = const Color(0xff1483c2);
   final Color shadowColor = const Color(0xff6a6a6a);
+  final Color textFormFieldColor = const Color(0xfff7f7f9);
 }

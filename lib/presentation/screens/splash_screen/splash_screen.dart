@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:nike_store/presentation/screens/onboard_page/onboard_page.dart';
 import 'package:nike_store/presentation/utils/components/next_page.dart';
 
-import '../../utils/components/size_config.dart';
 import '../../utils/theme_manager/styles.dart';
 
 class SplashScreen extends StatelessWidget {

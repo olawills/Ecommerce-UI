@@ -3,7 +3,8 @@ import 'package:nike_store/presentation/utils/components/size_config.dart';
 import 'package:nike_store/presentation/utils/theme_manager/styles.dart';
 
 class SignUpForm extends StatelessWidget {
-  const SignUpForm({Key? key}) : super(key: key);
+  final Widget? child;
+  const SignUpForm({Key? key, this.child}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -24,10 +25,15 @@ class SignUpForm extends StatelessWidget {
           TextFormField(
             keyboardType: TextInputType.text,
             decoration: InputDecoration(
-                hintText: '********',
+                hintText: 'WILLIAMS OLABAMIDELE',
+                hintStyle: TextStyle(
+                  color: appColors.blackTextColor,
+                  fontFamily: 'Raleway',
+                  fontWeight: FontWeight.bold,
+                ),
                 enabledBorder: OutlineInputBorder(
                   borderSide: BorderSide(
-                    color: appColors.milkishColor,
+                    color: appColors.textFormFieldColor,
                     width: 2,
                   ),
                   borderRadius: BorderRadius.circular(20),
@@ -39,6 +45,7 @@ class SignUpForm extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20),
                 )),
           ),
+          
           SizedBox(height: getProportionateScreenHeight(20)),
           Text(
             'Email Address',
@@ -51,10 +58,15 @@ class SignUpForm extends StatelessWidget {
           TextFormField(
             keyboardType: TextInputType.emailAddress,
             decoration: InputDecoration(
-                hintText: 'xyz@gmail.com',
+                hintText: 'wobdele@gmail.com',
+                hintStyle: TextStyle(
+                  color: appColors.blackTextColor,
+                  fontFamily: 'Raleway',
+                  fontWeight: FontWeight.w700,
+                ),
                 enabledBorder: OutlineInputBorder(
                   borderSide: BorderSide(
-                    color: appColors.milkishColor,
+                    color: appColors.textFormFieldColor,
                     width: 2,
                   ),
                   borderRadius: BorderRadius.circular(20),
@@ -80,10 +92,10 @@ class SignUpForm extends StatelessWidget {
             obscureText: true,
             decoration: InputDecoration(
               hintText: '***********',
-              suffixIcon: const Icon(Icons.visibility_off),
+              suffixIcon: child ?? const Icon(Icons.visibility_off),
               enabledBorder: OutlineInputBorder(
                 borderSide: BorderSide(
-                  color: appColors.milkishColor,
+                  color: appColors.textFormFieldColor,
                   width: 2,
                 ),
                 borderRadius: BorderRadius.circular(20),
