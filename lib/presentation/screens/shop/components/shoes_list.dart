@@ -1,7 +1,5 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:nike_store/presentation/utils/theme_manager/styles.dart';
 import 'package:nike_store/presentation/utils/components/size_config.dart';
 

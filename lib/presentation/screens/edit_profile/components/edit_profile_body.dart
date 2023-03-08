@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:nike_store/presentation/screens/edit_profile/components/profile_form.dart';
 import 'package:nike_store/presentation/screens/profile/components/profile_avatar.dart';
+import 'package:nike_store/presentation/screens/profile/profile_screen.dart';
 import 'package:nike_store/presentation/utils/components/header.dart';
+import 'package:nike_store/presentation/utils/components/next_page.dart';
 import 'package:nike_store/presentation/utils/components/size_config.dart';
 import 'package:nike_store/presentation/utils/theme_manager/styles.dart';
 
@@ -69,7 +71,7 @@ Future buildDialog(BuildContext context) async {
             ),
             actions: [
               TextButton(
-                onPressed: () {},
+                onPressed: () => Navigator.pop(context),
                 child: Text(
                   'No',
                   style: Theme.of(context).textTheme.headline2?.copyWith(
@@ -84,7 +86,10 @@ Future buildDialog(BuildContext context) async {
                 width: getProportionateScreenWidth(50),
               ),
               TextButton(
-                onPressed: () {},
+                onPressed: () => nextPageOnly(
+                  context: context,
+                  screen: const ProfileScreen(),
+                ),
                 child: Text(
                   'Yes',
                   style: Theme.of(context).textTheme.headline2?.copyWith(

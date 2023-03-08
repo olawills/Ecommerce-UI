@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:nike_store/presentation/screens/cart/components/increase_product_card.dart';
 import 'package:nike_store/presentation/utils/components/size_config.dart';
-import 'package:nike_store/presentation/utils/theme_manager/styles.dart';
-
 import 'build_delete_card.dart';
 import 'finla_product_card.dart';
 

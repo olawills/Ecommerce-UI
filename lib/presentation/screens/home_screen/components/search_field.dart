@@ -28,7 +28,7 @@ class SearchField extends StatelessWidget {
               ),
             ),
             child: TextField(
-              onChanged: (value) => print(value),
+              // onChanged: (value) => print(value),
               decoration: InputDecoration(
                 contentPadding: const EdgeInsets.symmetric(
                   horizontal: 20,

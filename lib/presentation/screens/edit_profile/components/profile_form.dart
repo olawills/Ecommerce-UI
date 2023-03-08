@@ -144,7 +144,7 @@ class ProfileForm extends StatelessWidget {
             keyboardType: TextInputType.text,
             initialCountryCode: 'NG',
             onChanged: (phone) {
-              print(phone.completeNumber);
+              // print(phone.completeNumber);
             },
             decoration: InputDecoration(
               // labelText: 'Nigeria',

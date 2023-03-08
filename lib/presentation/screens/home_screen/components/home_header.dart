@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_zoom_drawer/config.dart';
 import 'package:nike_store/presentation/screens/cart/cart_screen.dart';
-import 'package:nike_store/presentation/screens/home_screen/components/side_menu.dart';
-
 import '../../../utils/components/size_config.dart';
 import 'shop_counter.dart';
 
