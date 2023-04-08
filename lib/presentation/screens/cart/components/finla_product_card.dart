@@ -44,7 +44,7 @@ class FinalProductCard extends StatelessWidget {
                   children: [
                     Text(
                       'Nike Air Max 270 Essential',
-                      style: Theme.of(context).textTheme.headline2?.copyWith(
+                      style: Theme.of(context).textTheme.displayMedium!.copyWith(
                             fontFamily: 'Raleway',
                             fontSize: 18,
                             color: appColors.blackTextColor,
@@ -54,7 +54,7 @@ class FinalProductCard extends StatelessWidget {
                     const SizedBox(height: 5),
                     Text(
                       '\$74.95',
-                      style: Theme.of(context).textTheme.headline2?.copyWith(
+                      style: Theme.of(context).textTheme.displayMedium!.copyWith(
                             fontFamily: 'Raleway',
                             fontSize: 16,
                             color: appColors.blackTextColor,

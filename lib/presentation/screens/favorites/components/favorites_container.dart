@@ -117,15 +117,3 @@ class FavoritesContainer extends StatelessWidget {
     );
   }
 }
-
-
-
-//  color: Colors.red,
-//                 secondColor: Colors.blue,
-
-
-//                 color: Colors.red,
-//                 secondColor: Colors.blue,
-
-//                  color: Colors.cyan.shade300,
-//                 secondColor: Colors.blue.shade500,

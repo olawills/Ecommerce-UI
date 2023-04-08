@@ -34,7 +34,7 @@ class IncreaseProductCard extends StatelessWidget {
                 ),
                 Text(
                   '1',
-                  style: Theme.of(context).textTheme.headline2?.copyWith(
+                  style: Theme.of(context).textTheme.displayMedium!.copyWith(
                         fontFamily: 'Raleway',
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
@@ -86,21 +86,23 @@ class IncreaseProductCard extends StatelessWidget {
                     children: [
                       Text(
                         'Nike Club Max',
-                        style: Theme.of(context).textTheme.headline2?.copyWith(
-                              fontFamily: 'Raleway',
-                              fontSize: 18,
-                              color: appColors.blackTextColor,
-                              fontWeight: FontWeight.w400,
-                            ),
+                        style:
+                            Theme.of(context).textTheme.displayMedium!.copyWith(
+                                  fontFamily: 'Raleway',
+                                  fontSize: 18,
+                                  color: appColors.blackTextColor,
+                                  fontWeight: FontWeight.w400,
+                                ),
                       ),
                       const SizedBox(height: 5),
                       Text(
                         '\$584.95',
-                        style: Theme.of(context).textTheme.headline2?.copyWith(
-                              fontFamily: 'Raleway',
-                              fontSize: 16,
-                              color: appColors.blackTextColor,
-                            ),
+                        style:
+                            Theme.of(context).textTheme.displayMedium!.copyWith(
+                                  fontFamily: 'Raleway',
+                                  fontSize: 16,
+                                  color: appColors.blackTextColor,
+                                ),
                       ),
                     ],
                   ),

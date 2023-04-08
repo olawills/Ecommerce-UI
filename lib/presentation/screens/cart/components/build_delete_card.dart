@@ -45,7 +45,7 @@ class BuildDeleteCard extends StatelessWidget {
                   children: [
                     Text(
                       'Nike Club Max 200',
-                      style: Theme.of(context).textTheme.headline2?.copyWith(
+                      style: Theme.of(context).textTheme.displayMedium!.copyWith(
                             fontFamily: 'Raleway',
                             fontSize: 17,
                             color: appColors.blackTextColor,
@@ -55,7 +55,7 @@ class BuildDeleteCard extends StatelessWidget {
                     const SizedBox(height: 5),
                     Text(
                       '\$94.05',
-                      style: Theme.of(context).textTheme.headline2?.copyWith(
+                      style: Theme.of(context).textTheme.displayMedium!.copyWith(
                             fontFamily: 'Raleway',
                             fontSize: 16,
                             color: appColors.blackTextColor,

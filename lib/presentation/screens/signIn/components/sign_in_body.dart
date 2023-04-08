@@ -4,6 +4,7 @@ import 'package:nike_store/presentation/screens/signIn/components/sign_in_form.d
 import 'package:nike_store/presentation/screens/singUp/sign_up_screen.dart';
 import 'package:nike_store/presentation/utils/components/default_button.dart';
 import 'package:nike_store/presentation/utils/components/header_widget.dart';
+import 'package:nike_store/presentation/utils/components/next_page.dart';
 import 'package:nike_store/presentation/utils/components/no_account_info.dart';
 import 'package:nike_store/presentation/utils/components/size_config.dart';
 import 'package:nike_store/presentation/utils/theme_manager/styles.dart';
@@ -18,7 +19,6 @@ class BodyWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-         
           SizedBox(height: SizeConfig.screenHeight * 0.08),
           const HeaderWidget(
             headerText: 'Hello Again!',
@@ -31,7 +31,18 @@ class BodyWidget extends StatelessWidget {
             child: DefaultButton(
               textColor: appColors.textColor,
               backgroundColor: appColors.backgroundColor,
-              onPressed: () =>  Navigator.pushNamed(context, HomeScreen.routeName),
+              onPressed: () {
+                // nextPageOnly(
+                //   context: context,
+                //   screen: const HomeScreen(),
+                // );
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const HomeScreen(),
+                  ),
+                );
+              },
               text: 'Sign In',
             ),
           ),
@@ -41,25 +52,24 @@ class BodyWidget extends StatelessWidget {
             child: DefaultButton(
               textColor: appColors.blackTextColor,
               backgroundColor: appColors.textColor,
-              onPressed: () {
-               
-              },
+              onPressed: () {},
               text: 'Sign In With Google',
-              child:
-                  Image.asset('assets/icons/google.png'),
+              child: Image.asset('assets/icons/google.png'),
             ),
           ),
           SizedBox(height: SizeConfig.screenHeight * 0.15),
           NoAccountInfo(
             firstText: 'New User?',
             secondText: 'Create Account',
-            onPressed: () =>
-                Navigator.pushNamed(context, SignUpScreen.routeName),
+            onPressed: () {
+              nextPageOnly(
+                context: context,
+                screen: const SignUpScreen(),
+              );
+            },
           ),
         ],
       ),
     );
- 
- 
   }
 }

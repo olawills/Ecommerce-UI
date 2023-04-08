@@ -33,7 +33,7 @@ class _MapPageState extends State<MapPage> {
                 alignment: Alignment.center,
                 child: Text(
                   'View Map',
-                  style: Theme.of(context).textTheme.headline2?.copyWith(
+                  style: Theme.of(context).textTheme.displayMedium!.copyWith(
                         fontFamily: 'Raleway',
                         fontSize: 18,
                         fontWeight: FontWeight.w400,

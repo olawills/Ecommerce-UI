@@ -18,7 +18,7 @@ class ShopContent extends StatelessWidget {
         children: [
           Text(
             'Nike Air Max 270 ',
-            style: Theme.of(context).textTheme.headline2?.copyWith(
+            style: Theme.of(context).textTheme.displayMedium!.copyWith(
                   fontFamily: 'Raleway',
                   fontSize: getProportionateScreenWidth(34),
                   color: appColors.blackTextColor,
@@ -27,7 +27,7 @@ class ShopContent extends StatelessWidget {
           ),
           Text(
             'Essential',
-            style: Theme.of(context).textTheme.headline2?.copyWith(
+            style: Theme.of(context).textTheme.displayMedium!.copyWith(
                   fontFamily: 'Raleway',
                   fontSize: getProportionateScreenWidth(34),
                   color: appColors.blackTextColor,
@@ -37,7 +37,7 @@ class ShopContent extends StatelessWidget {
           SizedBox(height: getProportionateScreenHeight(10)),
           Text(
             "Men's Shoes",
-            style: Theme.of(context).textTheme.headline2?.copyWith(
+            style: Theme.of(context).textTheme.displayMedium!.copyWith(
                   fontFamily: 'Raleway',
                   fontSize: getProportionateScreenWidth(28),
                   color: appColors.blackTextColor,
@@ -47,7 +47,7 @@ class ShopContent extends StatelessWidget {
           SizedBox(height: getProportionateScreenHeight(10)),
           Text(
             "\$179.39",
-            style: Theme.of(context).textTheme.headline2?.copyWith(
+            style: Theme.of(context).textTheme.displayMedium!.copyWith(
                   fontFamily: 'Raleway',
                   fontSize: getProportionateScreenWidth(28),
                   color: appColors.blackTextColor,

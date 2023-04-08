@@ -19,14 +19,14 @@ class Header extends StatelessWidget {
   Widget build(BuildContext context) {
     AppColors appColors = AppColors();
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 25),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           ReusableButton(onPressed: () => Navigator.pop(context)),
           Text(
             text,
-            style: Theme.of(context).textTheme.headline2?.copyWith(
+            style: Theme.of(context).textTheme.displayMedium!.copyWith(
                   fontFamily: 'Raleway',
                   fontSize: getProportionateScreenWidth(24),
                   fontWeight: FontWeight.bold,

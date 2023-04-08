@@ -53,7 +53,7 @@ class NotificationContent extends StatelessWidget {
                         Text(
                           'We Have New \nProducts With Offers',
                           style:
-                              Theme.of(context).textTheme.headline2?.copyWith(
+                              Theme.of(context).textTheme.displayMedium!.copyWith(
                                     fontFamily: 'Raleway',
                                     fontSize: 16,
                                     color: appColors.backgroundColor,
@@ -67,8 +67,8 @@ class NotificationContent extends StatelessWidget {
                               '\$364.95',
                               style: Theme.of(context)
                                   .textTheme
-                                  .headline2
-                                  ?.copyWith(
+                                  .displayMedium
+                                  !.copyWith(
                                     fontFamily: 'Raleway',
                                     fontSize: 16,
                                     color: appColors.blackTextColor,
@@ -79,8 +79,8 @@ class NotificationContent extends StatelessWidget {
                               '\$260.00',
                               style: Theme.of(context)
                                   .textTheme
-                                  .headline2
-                                  ?.copyWith(
+                                  .displayMedium
+                                  !.copyWith(
                                     fontFamily: 'Raleway',
                                     fontSize: 16,
                                     color: appColors.blackTextColor
@@ -94,7 +94,7 @@ class NotificationContent extends StatelessWidget {
                   ),
                   Text(
                     time,
-                    style: Theme.of(context).textTheme.headline2?.copyWith(
+                    style: Theme.of(context).textTheme.displayMedium!.copyWith(
                           fontFamily: 'Raleway',
                           fontSize: 16,
                           color: appColors.blackTextColor,

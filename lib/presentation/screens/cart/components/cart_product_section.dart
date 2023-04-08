@@ -16,7 +16,7 @@ class CartProductSection extends StatelessWidget {
         children: [
           Text(
             '3 Item',
-            style: Theme.of(context).textTheme.headline2?.copyWith(
+            style: Theme.of(context).textTheme.displayMedium!.copyWith(
                   fontFamily: 'Raleway',
                   fontSize: 18,
                   fontWeight: FontWeight.bold,

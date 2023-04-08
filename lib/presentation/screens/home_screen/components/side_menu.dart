@@ -72,7 +72,7 @@ class BuildAvatar extends StatelessWidget {
         ),
         Text(
           'Emmanuel Oyiboke',
-          style: Theme.of(context).textTheme.headline1?.copyWith(
+          style: Theme.of(context).textTheme.displayLarge!.copyWith(
                 fontFamily: 'Raleway',
                 fontSize: getProportionateScreenWidth(28),
                 fontWeight: FontWeight.bold,

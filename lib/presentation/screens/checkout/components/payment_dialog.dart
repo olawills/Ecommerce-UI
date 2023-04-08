@@ -31,7 +31,7 @@ Future buildPaymentDialog(BuildContext context) async {
                 Text(
                   'Your Payment is Successful',
                   textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.headline2?.copyWith(
+                  style: Theme.of(context).textTheme.displayMedium!.copyWith(
                         fontFamily: 'Raleway',
                         fontSize: getProportionateScreenWidth(26),
                         fontWeight: FontWeight.w400,

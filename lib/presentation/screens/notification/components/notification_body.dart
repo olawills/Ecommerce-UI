@@ -22,7 +22,7 @@ class NotificationBody extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 15),
           child: Text(
             'Recent',
-            style: Theme.of(context).textTheme.headline2?.copyWith(
+            style: Theme.of(context).textTheme.displayMedium!.copyWith(
                   fontFamily: 'Raleway',
                   fontSize: 24,
                   color: appColors.blackTextColor,
@@ -59,7 +59,7 @@ class NotificationBody extends StatelessWidget {
               SizedBox(height: getProportionateScreenHeight(30)),
               Text(
                 'Yesterday',
-                style: Theme.of(context).textTheme.headline2?.copyWith(
+                style: Theme.of(context).textTheme.displayMedium!.copyWith(
                       fontFamily: 'Raleway',
                       fontSize: 24,
                       color: appColors.blackTextColor,

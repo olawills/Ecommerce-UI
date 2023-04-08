@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nike_store/presentation/utils/components/size_config.dart';
+import 'package:nike_store/presentation/widgets/ontap_handler.dart';
 import '../../../utils/theme_manager/styles.dart';
 
 class SelectCategory extends StatefulWidget {
@@ -23,7 +24,7 @@ class _SelectCategoryState extends State<SelectCategory> {
   Widget build(BuildContext context) {
     AppColors appColors = AppColors();
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding: const EdgeInsets.only(left: 10),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -34,92 +35,34 @@ class _SelectCategoryState extends State<SelectCategory> {
             ),
           ),
           SizedBox(height: getProportionateScreenHeight(15)),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                GestureDetector(
+          Container(
+            height: 70,
+            width: double.maxFinite,
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: textIndex.length,
+              itemBuilder: (ctx, index) {
+                return OnTapHandler(
                   onTap: () {},
                   child: Container(
-                    margin: const EdgeInsets.all(10),
-                    height: getProportionateScreenHeight(45),
-                    width: getProportionateScreenWidth(100),
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                      color: appColors.textColor,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Text(
-                      'All Shoes',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: appColors.blackTextColor,
-                      ),
-                    ),
-                  ),
-                ),
-                GestureDetector(
-                  onTap: () {},
-                  child: Container(
-                    margin: const EdgeInsets.all(10),
-                    height: getProportionateScreenHeight(45),
-                    width: getProportionateScreenWidth(100),
+                    margin: const EdgeInsets.all(8),
+                    // height: getProportionateScreenHeight(45),
+                    width: getProportionateScreenWidth(150),
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
                       color: appColors.backgroundColor,
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Text(
-                      'Outdoor',
+                      textIndex[index],
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: appColors.textColor,
                       ),
                     ),
                   ),
-                ),
-                GestureDetector(
-                  onTap: () {},
-                  child: Container(
-                    margin: const EdgeInsets.all(10),
-                    height: getProportionateScreenHeight(45),
-                    width: getProportionateScreenWidth(100),
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                      color: appColors.textColor,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Text(
-                      'Tennis',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: appColors.blackTextColor,
-                      ),
-                    ),
-                  ),
-                ),
-                GestureDetector(
-                  onTap: () {},
-                  child: Container(
-                    margin: const EdgeInsets.all(10),
-                    height: getProportionateScreenHeight(45),
-                    width: getProportionateScreenWidth(100),
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                      color: appColors.textColor,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Text(
-                      'Sneakers',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: appColors.blackTextColor,
-                      ),
-                    ),
-                  ),
-                ),
-              ],
+                );
+              },
             ),
           ),
         ],

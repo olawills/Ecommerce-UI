@@ -16,7 +16,7 @@ class CartBody extends StatelessWidget {
           child1: ReusableButton(onPressed: () => Navigator.pop(context)),
           child2: Text(
             'My Cart',
-            style: Theme.of(context).textTheme.headline2?.copyWith(
+            style: Theme.of(context).textTheme.displayMedium!.copyWith(
                   fontFamily: 'Raleway',
                   fontSize: 18,
                   fontWeight: FontWeight.bold,

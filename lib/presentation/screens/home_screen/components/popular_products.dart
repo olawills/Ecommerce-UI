@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nike_store/presentation/utils/components/size_config.dart';
 import 'package:nike_store/presentation/utils/theme_manager/styles.dart';
+import 'package:nike_store/presentation/widgets/ontap_handler.dart';
 
 import 'popular_shoes.dart';
 
@@ -25,7 +26,7 @@ class PopularProductsPage extends StatelessWidget {
                   fontSize: getProportionateScreenWidth(20),
                 ),
               ),
-              InkWell(
+              OnTapHandler(
                 onTap: () {},
                 child: Text(
                   'See all',
@@ -38,16 +39,17 @@ class PopularProductsPage extends StatelessWidget {
             ],
           ),
           SizedBox(height: getProportionateScreenHeight(20)),
-          Row(
-            children: [
-              const PopularShoes(
-                image: 'assets/images/outdoor.png',
-              ),
-              SizedBox(width: getProportionateScreenHeight(3)),
-              const PopularShoes(
-                image: 'assets/images/sneakers.png',
-              ),
-            ],
+          Container(
+            // height:
+            child: GridView.builder(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2),
+              itemBuilder: (ctx, index) {
+                return const PopularShoes();
+              },
+            ),
           ),
           SizedBox(height: getProportionateScreenHeight(20)),
           Text(
@@ -59,7 +61,7 @@ class PopularProductsPage extends StatelessWidget {
           ),
           SizedBox(height: getProportionateScreenHeight(20)),
           buildCardBanner(),
-          SizedBox(height: getProportionateScreenHeight(30)),
+          SizedBox(height: getProportionateScreenHeight(20)),
         ],
       ),
     );

@@ -22,7 +22,7 @@ class EditProfileBody extends StatelessWidget {
             onPressed: () => buildDialog(context),
             child: Text(
               'Done',
-              style: Theme.of(context).textTheme.headline2?.copyWith(
+              style: Theme.of(context).textTheme.displayMedium!.copyWith(
                     fontFamily: 'Raleway',
                     fontSize: getProportionateScreenWidth(18),
                     fontWeight: FontWeight.bold,
@@ -36,7 +36,7 @@ class EditProfileBody extends StatelessWidget {
         SizedBox(height: getProportionateScreenHeight(10)),
         Text(
           'Emmanuel Oyiboke',
-          style: Theme.of(context).textTheme.headline2?.copyWith(
+          style: Theme.of(context).textTheme.displayMedium!.copyWith(
                 fontFamily: 'Raleway',
                 fontSize: getProportionateScreenWidth(24),
                 fontWeight: FontWeight.bold,
@@ -46,7 +46,7 @@ class EditProfileBody extends StatelessWidget {
         SizedBox(height: getProportionateScreenHeight(10)),
         Text(
           'Change Profile Picture',
-          style: Theme.of(context).textTheme.headline2?.copyWith(
+          style: Theme.of(context).textTheme.displayMedium!.copyWith(
                 fontFamily: 'Raleway',
                 fontSize: getProportionateScreenWidth(18),
                 fontWeight: FontWeight.bold,
@@ -74,7 +74,7 @@ Future buildDialog(BuildContext context) async {
                 onPressed: () => Navigator.pop(context),
                 child: Text(
                   'No',
-                  style: Theme.of(context).textTheme.headline2?.copyWith(
+                  style: Theme.of(context).textTheme.displayMedium!.copyWith(
                         fontFamily: 'Raleway',
                         fontSize: getProportionateScreenWidth(16),
                         fontWeight: FontWeight.bold,
@@ -92,7 +92,7 @@ Future buildDialog(BuildContext context) async {
                 ),
                 child: Text(
                   'Yes',
-                  style: Theme.of(context).textTheme.headline2?.copyWith(
+                  style: Theme.of(context).textTheme.displayMedium!.copyWith(
                         fontFamily: 'Raleway',
                         fontSize: getProportionateScreenWidth(16),
                         fontWeight: FontWeight.bold,

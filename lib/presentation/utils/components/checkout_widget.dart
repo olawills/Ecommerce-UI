@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nike_store/presentation/screens/checkout/checkout_screen.dart';
 import 'package:nike_store/presentation/utils/components/build_dot.dart';
 import 'package:nike_store/presentation/utils/components/default_button.dart';
+import 'package:nike_store/presentation/utils/components/next_page.dart';
 import 'package:nike_store/presentation/utils/components/size_config.dart';
 import 'package:nike_store/presentation/utils/theme_manager/styles.dart';
 
@@ -34,7 +35,7 @@ class CheckoutWidget extends StatelessWidget {
               children: [
                 Text(
                   'Subtotal',
-                  style: Theme.of(context).textTheme.headline2?.copyWith(
+                  style: Theme.of(context).textTheme.displayMedium!.copyWith(
                         fontFamily: 'Raleway',
                         fontSize: 18,
                         color: appColors.blackTextColor,
@@ -43,7 +44,7 @@ class CheckoutWidget extends StatelessWidget {
                 ),
                 Text(
                   '\$753.95',
-                  style: Theme.of(context).textTheme.headline2?.copyWith(
+                  style: Theme.of(context).textTheme.displayMedium!.copyWith(
                         fontFamily: 'Raleway',
                         fontSize: 18,
                         color: appColors.blackTextColor,
@@ -57,7 +58,7 @@ class CheckoutWidget extends StatelessWidget {
               children: [
                 Text(
                   'Delivery',
-                  style: Theme.of(context).textTheme.headline2?.copyWith(
+                  style: Theme.of(context).textTheme.displayMedium!.copyWith(
                         fontFamily: 'Raleway',
                         fontSize: 18,
                         color: appColors.blackTextColor,
@@ -66,7 +67,7 @@ class CheckoutWidget extends StatelessWidget {
                 ),
                 Text(
                   '\$60.20',
-                  style: Theme.of(context).textTheme.headline2?.copyWith(
+                  style: Theme.of(context).textTheme.displayMedium!.copyWith(
                         fontFamily: 'Raleway',
                         fontSize: 16,
                         color: appColors.blackTextColor,
@@ -86,7 +87,7 @@ class CheckoutWidget extends StatelessWidget {
               children: [
                 Text(
                   'Total Cost',
-                  style: Theme.of(context).textTheme.headline2?.copyWith(
+                  style: Theme.of(context).textTheme.displayMedium!.copyWith(
                         fontFamily: 'Raleway',
                         fontSize: 18,
                         color: appColors.blackTextColor,
@@ -95,7 +96,7 @@ class CheckoutWidget extends StatelessWidget {
                 ),
                 Text(
                   '\$814.15',
-                  style: Theme.of(context).textTheme.headline2?.copyWith(
+                  style: Theme.of(context).textTheme.displayMedium!.copyWith(
                         fontFamily: 'Raleway',
                         fontSize: 18,
                         color: appColors.bannerColor,
@@ -105,8 +106,12 @@ class CheckoutWidget extends StatelessWidget {
               ],
             ),
             DefaultButton(
-              onPressed: () =>
-                  Navigator.pushNamed(context, CheckoutScreen.routeName),
+              onPressed: () {
+                nextPageOnly(
+                  context: context,
+                  screen: const CheckoutScreen(),
+                );
+              },
               text: 'Checkout',
               textColor: appColors.textColor,
               backgroundColor: appColors.bannerColor,

@@ -4,8 +4,8 @@ import 'package:nike_store/presentation/utils/components/size_config.dart';
 import 'package:nike_store/presentation/utils/theme_manager/styles.dart';
 
 class PopularShoes extends StatelessWidget {
-  final String image;
-  const PopularShoes({Key? key, required this.image}) : super(key: key);
+  
+  const PopularShoes({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +39,7 @@ class PopularShoes extends StatelessWidget {
               Align(
                 alignment: Alignment.center,
                 child: Image.asset(
-                  image,
+                   'assets/images/outdoor.png',
                   height: 80,
                   width: 180,
                   // fit: BoxFit.cover,

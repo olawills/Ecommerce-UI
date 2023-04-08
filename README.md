@@ -1,16 +1,19 @@
 # nike_store
 
-A new Flutter project.
+Nike Store App
+  Home to Sneakers and Shoes
 
-## Getting Started
+## Nike Store 
 
-This project is a starting point for a Flutter application.
+## Upcoming Updates
 
-A few resources to get you started if this is your first Flutter project:
+- Use Of Api
+- Provider State Management
+- Models
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Sneak Peeep of the App 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## About
+
+

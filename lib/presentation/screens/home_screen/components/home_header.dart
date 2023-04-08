@@ -37,7 +37,7 @@ class _HomeHeaderState extends State<HomeHeader> {
           widget.child2 ??
               Text(
                 'Explore',
-                style: Theme.of(context).textTheme.headline1?.copyWith(
+                style: Theme.of(context).textTheme.displayLarge!.copyWith(
                       fontFamily: 'Raleway',
                       fontSize: getProportionateScreenWidth(32),
                       fontWeight: FontWeight.bold,

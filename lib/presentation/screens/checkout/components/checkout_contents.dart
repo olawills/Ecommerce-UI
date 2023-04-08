@@ -51,7 +51,7 @@ Widget buildContactInfo(BuildContext context) {
         padding: const EdgeInsets.only(top: 20, left: 15),
         child: Text(
           'Contact Information',
-          style: Theme.of(context).textTheme.headline2?.copyWith(
+          style: Theme.of(context).textTheme.displayMedium!.copyWith(
                 fontFamily: 'Raleway',
                 fontSize: 18,
                 fontWeight: FontWeight.w500,
@@ -77,7 +77,7 @@ Widget buildContactInfo(BuildContext context) {
               children: [
                 Text(
                   'emmanueloyiboke@gmail.com',
-                  style: Theme.of(context).textTheme.headline2?.copyWith(
+                  style: Theme.of(context).textTheme.displayMedium!.copyWith(
                         fontFamily: 'Raleway',
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
@@ -85,7 +85,7 @@ Widget buildContactInfo(BuildContext context) {
                 ),
                 Text(
                   'Email',
-                  style: Theme.of(context).textTheme.headline2?.copyWith(
+                  style: Theme.of(context).textTheme.displayMedium!.copyWith(
                         fontFamily: 'Raleway',
                         fontSize: 16,
                         fontWeight: FontWeight.w300,
@@ -113,7 +113,7 @@ Widget buildContactInfo(BuildContext context) {
               children: [
                 Text(
                   '+234-811-732-5298',
-                  style: Theme.of(context).textTheme.headline2?.copyWith(
+                  style: Theme.of(context).textTheme.displayMedium!.copyWith(
                         fontFamily: 'Raleway',
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
@@ -121,7 +121,7 @@ Widget buildContactInfo(BuildContext context) {
                 ),
                 Text(
                   'Phone',
-                  style: Theme.of(context).textTheme.headline2?.copyWith(
+                  style: Theme.of(context).textTheme.displayMedium!.copyWith(
                         fontFamily: 'Raleway',
                         fontSize: 16,
                         fontWeight: FontWeight.w300,
@@ -147,7 +147,7 @@ Widget buildAdressInfo(BuildContext context) {
         padding: const EdgeInsets.only(left: 25),
         child: Text(
           'Address',
-          style: Theme.of(context).textTheme.headline2?.copyWith(
+          style: Theme.of(context).textTheme.displayMedium!.copyWith(
                 fontFamily: 'Raleway',
                 fontSize: 18,
                 fontWeight: FontWeight.w400,
@@ -161,7 +161,7 @@ Widget buildAdressInfo(BuildContext context) {
           ListTile(
             title: Text(
               '1062 Airport Road Nigeria',
-              style: Theme.of(context).textTheme.headline2?.copyWith(
+              style: Theme.of(context).textTheme.displayMedium!.copyWith(
                     fontFamily: 'Raleway',
                     fontSize: 16,
                     fontWeight: FontWeight.w400,
@@ -192,7 +192,7 @@ Widget buildCheckout(BuildContext context) {
           ListTile(
             title: Text(
               'Subtotal',
-              style: Theme.of(context).textTheme.headline2?.copyWith(
+              style: Theme.of(context).textTheme.displayMedium!.copyWith(
                     fontFamily: 'Raleway',
                     fontSize: 18,
                     color: appColors.blackTextColor,
@@ -201,7 +201,7 @@ Widget buildCheckout(BuildContext context) {
             ),
             trailing: Text(
               '\$753.95',
-              style: Theme.of(context).textTheme.headline2?.copyWith(
+              style: Theme.of(context).textTheme.displayMedium!.copyWith(
                     fontFamily: 'Raleway',
                     fontSize: 18,
                     color: appColors.blackTextColor,
@@ -212,7 +212,7 @@ Widget buildCheckout(BuildContext context) {
           ListTile(
             title: Text(
               'Delivery',
-              style: Theme.of(context).textTheme.headline2?.copyWith(
+              style: Theme.of(context).textTheme.displayMedium!.copyWith(
                     fontFamily: 'Raleway',
                     fontSize: 18,
                     color: appColors.blackTextColor,
@@ -221,7 +221,7 @@ Widget buildCheckout(BuildContext context) {
             ),
             trailing: Text(
               '\$60.20',
-              style: Theme.of(context).textTheme.headline2?.copyWith(
+              style: Theme.of(context).textTheme.displayMedium!.copyWith(
                     fontFamily: 'Raleway',
                     fontSize: 16,
                     color: appColors.blackTextColor,
@@ -245,7 +245,7 @@ Widget buildCheckout(BuildContext context) {
           ListTile(
             title: Text(
               'Total Cost',
-              style: Theme.of(context).textTheme.headline2?.copyWith(
+              style: Theme.of(context).textTheme.displayMedium!.copyWith(
                     fontFamily: 'Raleway',
                     fontSize: 18,
                     color: appColors.blackTextColor,
@@ -254,7 +254,7 @@ Widget buildCheckout(BuildContext context) {
             ),
             trailing: Text(
               '\$814.15',
-              style: Theme.of(context).textTheme.headline2?.copyWith(
+              style: Theme.of(context).textTheme.displayMedium!.copyWith(
                     fontFamily: 'Raleway',
                     fontSize: 18,
                     color: appColors.bannerColor,
@@ -286,7 +286,7 @@ Widget buildPaymethod(BuildContext context) {
       children: [
         Text(
           'Payment Method',
-          style: Theme.of(context).textTheme.headline2?.copyWith(
+          style: Theme.of(context).textTheme.displayMedium!.copyWith(
                 fontFamily: 'Raleway',
                 fontSize: 16,
                 fontWeight: FontWeight.w500,
@@ -303,7 +303,7 @@ Widget buildPaymethod(BuildContext context) {
                 const SizedBox(width: 10),
                 Text(
                   'Dbl Card',
-                  style: Theme.of(context).textTheme.headline2?.copyWith(
+                  style: Theme.of(context).textTheme.displayMedium!.copyWith(
                         fontFamily: 'Raleway',
                         fontSize: 16,
                         fontWeight: FontWeight.w400,
@@ -318,7 +318,7 @@ Widget buildPaymethod(BuildContext context) {
                 children: [
                   Text(
                     '**** **** 0696 4629',
-                    style: Theme.of(context).textTheme.headline2?.copyWith(
+                    style: Theme.of(context).textTheme.displayMedium!.copyWith(
                           fontFamily: 'Raleway',
                           fontSize: 16,
                           fontWeight: FontWeight.w400,
